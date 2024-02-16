@@ -57,10 +57,8 @@
                </motherboard>
             </computer>
          </x:context>
-         <x:expect label="brings an error">
-            <mx:report cf="..." test="not(.=('at','atx','mini-itx'))" class="{ $mx:ACVC-class }"
-               matching="computer/motherboard/type" xpath="/computer/motherboard/type"
-               level="WARNING">Value <mx:code>CUSTOM</mx:code> does not appear among permissible (enumerated) values for this <mx:gi>type</mx:gi>: <mx:code>at|atx|mini-itx</mx:code>.</mx:report>
+         <x:expect label="does the wrong thing so I can see it in GitHub">
+            <mx:report>Intentionally wrong, show me a XSpec error in the GitHub UI!</mx:report>
          </x:expect>
       </x:scenario>
       <x:scenario label="[A.4] A field with a value out of compliance with its enumeration - extra whitespace">
